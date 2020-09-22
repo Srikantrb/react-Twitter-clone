@@ -1,0 +1,25 @@
+.feed {
+  flex: 0.4;
+  border-right: 1px solid var(--twitter-background);
+  min-width: fit-content;
+  overflow-y: scroll;
+}
+
+/* Hide Scrollbar in Chrome and Opera */
+.feed::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide Scrolbar in IE,FireFox,Edge */
+.feed {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.feed_header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  border: 1px solid var(--twitter-background);
+  padding: 10px 15px;
+}

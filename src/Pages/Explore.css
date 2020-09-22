@@ -1,0 +1,55 @@
+.explore {
+  /* flex: 0.7; */
+  display: flex;
+  flex: 0.7;
+  /* border-right: 1px solid var(--twitter-background); */
+  min-width: fit-content;
+  overflow-y: scroll;
+}
+
+/* Hide Scrollbar in Chrome and Opera */
+.explore::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide Scrolbar in IE,FireFox,Edge */
+.explore {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.explore_input {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  background-color: var(--twitter-background);
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.explore_input > input {
+  border: none;
+  background-color: var(--twitter-background);
+  outline-color: var(--twitter-color);
+  padding: 5px;
+  margin-left: 4px;
+  margin-right: 10px;
+  flex: 1;
+}
+.explore_searchicon {
+  color: grey;
+}
+.explore_feed {
+  flex: 0.4;
+  min-width: fit-content;
+  border-right: 1px solid var(--twitter-background);
+}
+.explore_widgets {
+  flex: 0.3;
+  min-width: fit-content;
+}
